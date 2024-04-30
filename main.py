@@ -34,8 +34,7 @@ if uploaded_file is not None:
                     st.write("Grabing user ids from Thinkific...")
                     ids_to_delete = grab_ids(email_list=list(uploaded_file_df[option]), header=HEADERS)
                     st.write("Ids retrieved, sending deletion request to Thinkific...")
-                    time.sleep(5)
-                    # delete_users(ids_to_delete, header=HEADERS)
+                    delete_users(ids_to_delete, header=HEADERS)
                     status.update(label="All done!", state="complete", expanded=False)
                 except Exception as e:
                     # st.error("An error has occured while sending requests to Thinkific, please make sure your API key and subdomain were entered correctly")
