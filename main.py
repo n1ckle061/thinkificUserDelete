@@ -4,7 +4,7 @@ import requests
 import time
 from thinkific import HEADERS, grab_ids, delete_users
 
-
+st.set_page_config(layout="wide")
 st.write("""
 # Thinkific User Delete
 This app provides an intuitive user interface that will allow you to upload a list of Thinkfic users' emails and have them deleted on Thinkific, via the provided API.   
