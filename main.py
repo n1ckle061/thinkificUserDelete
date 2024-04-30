@@ -37,8 +37,9 @@ if uploaded_file is not None:
                     time.sleep(5)
                     # delete_users(ids_to_delete, header=HEADERS)
                     status.update(label="All done!", state="complete", expanded=False)
-                except:
-                    st.error("An error has occured while sending requests to Thinkific, please make sure your API key and subdomain were entered correctly")
+                except Exception as e:
+                    # st.error("An error has occured while sending requests to Thinkific, please make sure your API key and subdomain were entered correctly")
+                    st.error(e)
                     status.update(label="Incomplete", state="error", expanded=True)
                 
             
