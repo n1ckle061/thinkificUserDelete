@@ -22,6 +22,6 @@ def delete_users(users_to_delete_list, header):
         params = {"id": f"{id}"}
         response = requests.delete(f"https://api.thinkific.com/api/public/v1/users/{id}", params=params, headers=header, verify=False)
         code = response.status_code
-        if code == 204:  print("User successfully deleted")
-        else: print(f"Failed to delete user with id {id}")
+        # if code == 204:  print("User successfully deleted")
+        # else: print(f"Failed to delete user with id {id}")
     return 1
