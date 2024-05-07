@@ -10,7 +10,7 @@ st.write("""
 This app provides an intuitive user interface that will allow you to upload a list of Thinkfic users' emails and have them deleted on Thinkific, via the provided API.   
 """)
 
-uploaded_file = st.file_uploader("Upload a CSV file", type={"csv", "text"})
+uploaded_file = st.file_uploader("Upload a CSV file", type={"csv"})
 if uploaded_file is not None:
     col1, col2 = st.columns(2)
     with col1:
