@@ -12,7 +12,6 @@ hide_streamlit_style = """
             """
 # hide made by streamlit footer and hamburger
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.set_page_config(layout="wide")
 st.write("""
 # Thinkific User Delete
 This app provides an intuitive user interface that will allow you to upload a list of Thinkfic users' emails and have them deleted on Thinkific, via the Thinkific API.   
