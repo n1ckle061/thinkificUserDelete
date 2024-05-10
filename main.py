@@ -15,7 +15,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_page_config(layout="wide")
 st.write("""
 # Thinkific User Delete
-This app provides an intuitive user interface that will allow you to upload a list of Thinkfic users' emails and have them deleted on Thinkific, via the provided API.   
+This app provides an intuitive user interface that will allow you to upload a list of Thinkfic users' emails and have them deleted on Thinkific, via the Thinkific API.   
 """)
 
 uploaded_file = st.file_uploader("Upload a CSV file", type={"csv"})
