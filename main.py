@@ -4,6 +4,14 @@ import requests
 import time
 from thinkific import HEADERS, grab_ids, delete_users
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+# hide made by streamlit footer and hamburger
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_page_config(layout="wide")
 st.write("""
 # Thinkific User Delete
